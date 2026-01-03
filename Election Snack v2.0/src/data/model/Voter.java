@@ -81,7 +81,7 @@ public class Voter {
             if(character == '@') hasAt = true;
             if (character == '.') hasDot = true;
         }
-        if(!hasAt || !hasDot) throw new InvalidEmailAddressException("Invalid, please enter a valid email address");
+        if(!hasAt || !hasDot) throw new InvalidEmailAddressException("Invalid email, please enter a valid email address");
     }
 
     private static String generateVoterID(){

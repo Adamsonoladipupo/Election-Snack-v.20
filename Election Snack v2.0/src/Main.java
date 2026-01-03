@@ -1,6 +1,10 @@
 import data.model.Candidate;
 import data.model.PollingUnit;
 import data.model.Voter;
+import exceptions.CandidateDoesNotExistErrorException;
+import exceptions.InvalidEmailAddressException;
+import exceptions.UnregisteredVoter;
+import exceptions.VoterDoesNotExistException;
 
 import java.util.HashMap;
 import java.util.Objects;
@@ -41,11 +45,16 @@ public class Main {
                 case "2"-> {
                     System.out.print("Enter voter's name: ");
                     String voterName = inputCollector.nextLine();
-                    System.out.println("Enter voter's email address: ");
+                    System.out.print("Enter voter's email address: ");
                     String voterEmail = inputCollector.nextLine();
-                    Voter voter = new Voter(voterName, voterEmail);
-                    pollingUnit.registerVoter(voter);
-                    System.out.printf("Congratulation!. Your voter's ID is: %s\n", voter.getVoterID());
+                    try {
+                        Voter voter = new Voter(voterName, voterEmail);
+                        pollingUnit.registerVoter(voter);
+                        System.out.printf("Congratulation!. Your voter's ID is: %s\n", voter.getVoterID());
+                    }
+                    catch (InvalidEmailAddressException e) {
+                        System.out.print(e.getMessage()+"\n");
+                    }
                 }
                 case "3"-> {
                     System.out.print("Enter your voterID: ");
@@ -53,14 +62,29 @@ public class Main {
                     Voter voter = pollingUnit.getVoterByID(voterID);
                     System.out.print("Enter your preferred candidateID: ");
                     String candidateID = inputCollector.nextLine();
-                    Candidate candidate = pollingUnit.getCandidateByID(candidateID);
-                    voter.setBallot(candidate);
-                    System.out.print("Successfully set");
+                    try{
+                        Candidate candidate = pollingUnit.getCandidateByID(candidateID);
+                        voter.setBallot(candidate);
+                        System.out.print("Successfully set");
+                    }
+                    catch (CandidateDoesNotExistErrorException e){
+                        System.out.print(e.getMessage()+"\n");
+                    }
+
                 }
                 case "4"-> {
                     System.out.print("Enter your voterID: ");
                     String voterID = inputCollector.nextLine();
-                    pollingUnit.VoteForCandidate(pollingUnit.getVoterByID(voterID));
+                    try {
+                        pollingUnit.VoteForCandidate(pollingUnit.getVoterByID(voterID));
+                        String voterName = pollingUnit.getVoterByID(voterID).getVoterName();
+                        String candidateId = pollingUnit.getVoterByID(voterID).getBallot().getCandidate().getCandidateID();
+                        String CandidateName = pollingUnit.getCandidateByID(candidateId).getCandidateName();
+                        System.out.printf("Congratulation %s you got voted for %s\n", voterName, CandidateName);
+                    }
+                    catch (VoterDoesNotExistException | UnregisteredVoter | NullPointerException e){
+                        System.out.print(e.getMessage()+"\n");
+                    }
                 }
 
                 case "5"-> {

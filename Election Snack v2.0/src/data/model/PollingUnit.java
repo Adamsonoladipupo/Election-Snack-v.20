@@ -1,5 +1,6 @@
 package data.model;
 
+import exceptions.CandidateDoesNotExistErrorException;
 import exceptions.UnregisteredVoter;
 
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class PollingUnit {
                 return candidate;
             }
         }
-        return null;
+        throw new CandidateDoesNotExistErrorException("Sorry, there is no candidate with the inputed ID");
     }
 
     public void registerCandidate(Candidate candidate) {
