@@ -1,0 +1,74 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="if2qDPtDoHNF6FPEFzUG">
+    <mxGraphModel dx="1298" dy="1958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="-10" width="490" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-6" target="vfmtfFk6XXrgExEFeC_7-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-6" target="vfmtfFk6XXrgExEFeC_7-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="330" />
+              <mxPoint x="190" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-6" target="vfmtfFk6XXrgExEFeC_7-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="230" />
+              <mxPoint x="310" y="230" />
+              <mxPoint x="310" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-6" value="Polling Unit" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-7" target="vfmtfFk6XXrgExEFeC_7-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="355" />
+              <mxPoint x="720" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-7" target="vfmtfFk6XXrgExEFeC_7-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vfmtfFk6XXrgExEFeC_7-7" target="vfmtfFk6XXrgExEFeC_7-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-7" value="Voter" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="295" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-10" value="Cast vote" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="80" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-11" value="Register/ get voter ID" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="200" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-12" value="Conduct voting&amp;nbsp;&lt;div&gt;exercise&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="290" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-13" value="provide ballot&amp;nbsp;&lt;div&gt;boxs&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="460" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-14" value="Tallier/ count&amp;nbsp;&lt;div&gt;casted&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;votes&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="560" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-16" value="check winner/ leaderboard" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="395" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vfmtfFk6XXrgExEFeC_7-22" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Election Snacks Use Case Diagram&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="245" width="440" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
