@@ -1,10 +1,11 @@
-package data.model;
+package dtos.responses;
 
+import data.model.Ballot;
 import exceptions.DuplicateBallotException;
 
 import java.util.ArrayList;
 
-public class BallotBox {
+public class BallotBoxResponse {
     private ArrayList<Ballot> ballotBox = new ArrayList<>();
     private int counter;
 
@@ -16,7 +17,6 @@ public class BallotBox {
         if (ballotBox.contains(ballot)) throw new DuplicateBallotException("Sorry, only one unique ballot is allowed");
         else {
             ballotBox.add(ballot);
-            ballot.getCandidate().beVotedFor();
             counter++;
         }
     }
